@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Miembro VIP (Haute Édition)</title>
+    <style>
+        :root {
+            --surface: #131314;
+            --surface-bright: #39393a;
+            --on-surface: #e5e2e3;
+            --primary: #f2ca50;
+            --on-primary: #3c2f00;
+            --primary-container: #d4af37;
+            --secondary: #e1c46e;
+            --on-secondary: #3c2f00;
+            --tertiary: #f8c854;
+            --on-tertiary: #3f2e00;
+            --surface-container: #201f20;
+            --surface-container-high: #2a2a2b;
+            --surface-container-highest: #353436;
+            --outline: #99907c;
+            --outline-variant: #4d4635;
+            --font-body: "Plus Jakarta Sans", sans-serif;
+            --font-headline: "Syne", sans-serif;
+            --font-label: "Space Grotesk", sans-serif;
+            --rounded: 8;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background-color: var(--surface);
+            color: var(--on-surface);
+            margin: 0;
+            min-height: 100vh;
+            padding: 24px;
+        }
+        .logo { font-family: var(--font-headline); font-size: 32px; color: var(--primary); margin-bottom: 24px; }
+        .screen-title { font-family: var(--font-headline); font-size: 24px; color: var(--primary); margin-bottom: 16px; }
+        .card {
+            background: var(--surface-container);
+            border-radius: var(--rounded)px;
+            padding: 24px;
+            margin: 16px 0;
+            border: 1px solid var(--outline-variant);
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background: var(--primary);
+            border-radius: 50%;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--on-primary);
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .stats { display: flex; gap: 24px; margin: 24px 0; text-align: center; }
+        .stat-number { font-family: var(--font-headline); font-size: 28px; color: var(--primary); display: block; }
+        .stat-label { font-size: 14px; color: var(--on-surface-variant); }
+        .membership-tier { background: var(--primary-container); color: var(--on-primary-container); padding: 8px 16px; border-radius: 20px; font-weight: 500; display: inline-block; margin: 16px 0; }
+        .btn-premium { background: var(--primary); color: var(--on-primary); border: none; padding: 14px 28px; border-radius: var(--rounded)px; font-family: var(--font-headline); font-size: 18px; font-weight: 600; margin: 16px 0; display: block; width: 100%; }
+        .benefits { background: var(--surface-container-high); border-radius: var(--rounded)px; padding: 20px; margin: 16px 0; }
+        .benefit-item { display: flex; align-items: flex-start; margin: 12px 0; }
+        .benefit-icon { flex-shrink: 0; width: 24px; height: 24px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--on-secondary); margin-right: 12px; font-size: 12px; }
+        .benefit-text { flex-grow: 1; }
+    </style>
+</head>
+<body>
+    <div class="logo">Infinite Styles VIP</div>
+    <div class="screen-title">Perfil de Miembro VIP</div>
+    
+    <div class="card">
+        <div class="avatar">VIP</div>
+        <h2>Alexander Rodriguez</h2>
+        <p class="membership-tier">Miembro VIP Platino</p>
+        <div class="stats">
+            <div>
+                <span class="stat-number">24</span>
+                <span class="stat-label">Citas Completadas</span>
+            </div>
+            <div>
+                <span class="stat-number">$1,240</span>
+                <span class="stat-label">Ahorrado este año</span>
+            </div>
+            <div>
+                <span class="stat-number">5</span>
+                <span class="stat-label">Referidos Activos</span>
+            </div>
+        </div>
+        <button class="btn-premium">Renovar Membresía</button>
+    </div>
+    
+    <div class="card">
+        <h3>Beneficios VIP</h3>
+        <div class="benefits">
+            <div class="benefit-item">
+                <div class="benefit-icon">⏰</div>
+                <div class="benefit-text"><strong>Prioridad en Agendamiento</strong><br>Acceso inmediato a los mejores horarios</div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">💇</div>
+                <div class="benefit-text"><strong>Servicios Exclusivos</strong><br>Tratamientos premium no disponibles para miembros regulares</div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🎁</div>
+                <div class="benefit-text"><strong>Productos Gratis</strong><br>Muestra mensual de productos de cuidado capilar</div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">📞</div>
+                <div class="benefit-text"><strong>Soporte Prioritario</strong><br>Línea directa con el barbero senior</div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🎉</div>
+                <div class="benefit-text"><strong>Eventos Exclusivos</strong><br>Acceso a talleres y eventos privados</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views';
+
+@theme {
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-headline: 'Playfair Display', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-label: 'Space Grotesk', sans-serif;
+
+    --color-gold-primary: #f2ca50;
+    --color-gold-secondary: #e1c46e;
+    --color-gold-container: #d4af37;
+    --color-surface-obsidian: #131314;
+    --color-surface-container: #201f20;
+    --color-surface-high: #2a2a2b;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@layer components {
+    .vip-label {
+        @apply font-label text-xs uppercase tracking-[0.2em] text-[#d0c5af];
+    }
+    .vip-input {
+        @apply w-full rounded-md border border-[#4d4635]/70 bg-[#0e0e0f] px-4 py-3.5 text-[15px] text-[#e5e2e3] placeholder:text-[#99907c]/70 outline-none transition focus:border-[#f2ca50] focus:ring-2 focus:ring-[#f2ca50]/20;
+    }
+    .vip-error {
+        @apply mt-1.5 text-xs text-[#ffb4ab];
+    }
+    .vip-card {
+        @apply rounded-xl border border-[#2a2a2b] bg-[#1b1b1c] p-6 shadow-[0_8px_32px_rgba(0,0,0,0.45)];
+    }
+    .btn-gold {
+        @apply w-full flex items-center justify-center gap-3 rounded-md bg-gradient-to-r from-[#e9cf8a] via-[#f2ca50] to-[#c9a245] py-4 font-label text-sm font-bold uppercase tracking-[0.25em] text-[#2a2000] shadow-[0_0_30px_rgba(242,202,80,0.25)] transition hover:brightness-105 hover:shadow-[0_0_40px_rgba(242,202,80,0.4)] active:scale-[0.99] cursor-pointer;
+    }
+    .btn-ghost {
+        @apply w-full flex items-center justify-center gap-3 rounded-md border border-[#353436] bg-[#1b1b1c] py-4 font-label text-sm uppercase tracking-[0.2em] text-[#d0c5af] transition hover:border-[#d4af37]/60 hover:text-[#f2ca50] cursor-pointer;
+    }
+}

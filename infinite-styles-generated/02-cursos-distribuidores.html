@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos & Distribuidores (Haute Édition)</title>
+    <style>
+        :root {
+            --surface: #131314;
+            --surface-bright: #39393a;
+            --on-surface: #e5e2e3;
+            --primary: #f2ca50;
+            --on-primary: #3c2f00;
+            --primary-container: #d4af37;
+            --secondary: #e1c46e;
+            --on-secondary: #3c2f00;
+            --tertiary: #f8c854;
+            --on-tertiary: #3f2e00;
+            --surface-container: #201f20;
+            --surface-container-high: #2a2a2b;
+            --surface-container-highest: #353436;
+            --outline: #99907c;
+            --outline-variant: #4d4635;
+            --font-body: "Plus Jakarta Sans", sans-serif;
+            --font-headline: "Syne", sans-serif;
+            --font-label: "Space Grotesk", sans-serif;
+            --rounded: 8;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background-color: var(--surface);
+            color: var(--on-surface);
+            margin: 0;
+            min-height: 100vh;
+            padding: 24px;
+        }
+        .logo { font-family: var(--font-headline); font-size: 32px; color: var(--primary); margin-bottom: 24px; }
+        .screen-title { font-family: var(--font-headline); font-size: 24px; color: var(--primary); margin-bottom: 16px; }
+        .card {
+            background: var(--surface-container);
+            border-radius: var(--rounded)px;
+            padding: 24px;
+            margin: 16px 0;
+            border: 1px solid var(--outline-variant);
+        }
+        .btn {
+            background: var(--primary);
+            color: var(--on-primary);
+            border: none;
+            padding: 12px 24px;
+            border-radius: var(--rounded)px;
+            font-family: var(--font-headline);
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            margin: 8px;
+        }
+        .course-card {
+            background: var(--surface-container-high);
+            border-radius: var(--rounded)px;
+            padding: 16px;
+            margin: 12px 0;
+            border-left: 4px solid var(--primary);
+        }
+        .course-title { font-family: var(--font-headline); color: var(--primary); margin: 0 0 8px; }
+        .course-desc { color: var(--on-surface-variant); font-size: 14px; margin: 0; }
+        .price { font-family: var(--font-headline); color: var(--secondary); font-size: 20px; }
+        .distributor-badge { background: var(--tertiary-container); color: var(--on-tertiary-container); padding: 4px 12px; border-radius: 12px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="logo">Infinite Styles</div>
+    <div class="screen-title">Cursos & Distribuidores (Haute Édition)</div>
+    
+    <div class="card">
+        <h2>Academia de Barbería Premium</h2>
+        <p>Desarrolla tus habilidades con nuestros cursos profesionales y conviértete en distribuidor autorizado.</p>
+    </div>
+    
+    <div class="card">
+        <h3>Cursos Disponibles</h3>
+        <div class="course-card">
+            <div class="course-title">Corte Clásico & Moderno</div>
+            <p class="course-desc">Domina técnicas tradicionales y tendencias actuales de corte masculino.</p>
+            <span class="price">$299 USD</span>
+            <button class="btn">Inscribirse</button>
+        </div>
+        <div class="course-card">
+            <div class="course-title">Afeitado Tradicional & Barba</div>
+            <p class="course-desc">Arte del afeitado clásico con navaja y diseño de barba premium.</p>
+            <span class="price">$199 USD</span>
+            <button class="btn">Inscribirse</button>
+        </div>
+        <div class="course-card">
+            <div class="course-title">Colorimetría Masculina</div>
+            <p class="course-desc">Técnicas avanzadas de color para cabello masculino y canas.</p>
+            <span class="price">$249 USD</span>
+            <button class="btn">Inscribirse</button>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h3>Programa de Distribuidores</h3>
+        <p>Únete a nuestra red de distribuidores autorizados de productos Infinite Styles.</p>
+        <span class="distributor-badge">Distribuidor Autorizado</span>
+        <button class="btn" style="background: var(--secondary); color: var(--on-secondary); margin-top: 16px;">Solicitar Info</button>
+    </div>
+</body>
+</html>
